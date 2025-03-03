@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-home">
+          <img
+            src="public/external/blurbg4280-bhob.svg"
+            alt="blurbg4280"
+            class="home-blurbg"
+          />
+          <div class="home-body">
+            <div class="home-hero">
+              <div class="home-content1">
+                <div class="home-graphic1">
+                  <img
+                    src="public/external/ellipse34193-w06s-200h.png"
+                    alt="Ellipse34193"
+                    class="home-ellipse3"
+                  />
+                  <div class="home-scuare">
+                    <img
+                      src="public/external/graphic7445-mxwh-200h.png"
+                      alt="graphic7445"
+                      class="home-graphic2"
+                    />
+                  </div>
+                  <div class="home-circle">
+                    <img
+                      src="public/external/graphic7443-b04d-200h.png"
+                      alt="graphic7443"
+                      class="home-graphic3"
+                    />
+                  </div>
+                  <div class="home-polygon">
+                    <img
+                      src="public/external/graphic4198-gurt.svg"
+                      alt="graphic4198"
+                      class="home-graphic4"
+                    />
+                    <img
+                      src="public/external/graphic7439-x33f.svg"
+                      alt="graphic7439"
+                      class="home-graphic5"
+                    />
+                  </div>
+                </div>
+                <div class="home-text10">
+                  <span class="home-text11 subtitle">
+                    I'm a passionate UI/UX Designer focused on crafting
+                    remarkable digital experiences. My aim is to blend
+                    functionality and aesthetics to create impactful solutions
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="home-content2">
+              <div class="home-work">
+                <div class="home-header1">
+                  <span class="home-text12 Headingh2">My work</span>
+                  <span class="home-text13 paragraphlg">
+                    Here's a glimpse of some of my recent and exciting projects.
+                    Each of them reflects my focus on user-centered design and
+                    my commitment to excellence in user experience.
+                  </span>
+                </div>
+                <div class="home-projects">
+                  <div class="home-project1">
+                    <div class="home-left1">
+                      <div class="home-text14">
+                        <div class="home-text15">
+                          <span class="home-text16 Headingh3">SportEx App</span>
+                          <span class="home-text17 paragraphmd">2024</span>
+                          <span class="home-text18 paragraphlg">
+                            Stay ahead in cricket with live scores, real-time
+                            updates, and expert insights—your ultimate companion
+                            for the game. Follow every match, analyze team
+                            performances, and make informed decisions. With
+                            personalized dashboards and in-depth statistics,
+                            SportEx App redefines how you experience cricket,
+                            ensuring you never miss a moment of the action.
+                          </span>
+                        </div>
+                      </div>
+                      <a href="https://play.google.com/store/apps/details?id=com.sportex.app&hl=en_IN" target="_blank">
+                      <button class="home-button1">
+                        <span class="home-text19 labelmd">View App</span>
+                      </button>
+                    </a>
+                    </div>
+                    <img
+                      src="public/external/image1202-8qs8-700w.png"
+                      alt="Image1202"
+                      class="home-image1"
+                    />
+                  </div>
+                  <div class="home-project2">
+                    <div class="home-left2">
+                      <div class="home-text20">
+                        <div class="home-text21">
+                          <span class="home-text22 Headingh3">
+                            Dev Story Website
+                          </span>
+                          <span class="home-text23 paragraphmd">2024-25</span>
+                          <span class="home-text24 paragraphlg">
+                            Designed a comprehensive 15+ page website for a
+                            leading service-based company specializing in app
+                            and web development solutions for global clients.
+                            Created visually engaging and user-centric pages
+                            that highlight their expertise in delivering
+                            tailored solutions for diverse industries. From
+                            showcasing portfolios to structuring client-focused
+                            service sections, the design effectively
+                            communicates their capabilities and brand identity.
+                          </span>
+                        </div>
+                      </div>
+                      <a href="https://dev-story.com/" target="_blank">
+                      <button class="home-button2">
+                        <span class="home-text25 labelmd">View Site</span>
+                      </button>
+                    </a>
+                    </div>
+                    <img
+                      src="public/external/image1202-019j-700w.png"
+                      alt="Image1202"
+                      class="home-image2"
+                    />
+                  </div>
+                  <div class="home-project3">
+                    <div class="home-left3">
+                      <div class="home-text26">
+                        <div class="home-text27">
+                          <span class="home-text28 Headingh3">
+                            Mind &amp; Mom APP
+                          </span>
+                          <span class="home-text29 paragraphmd">2024</span>
+                          <span class="home-text30 paragraphlg">
+                            Your ultimate guide to pregnancy, fertility, and
+                            self-care. Empowering women with personalized health
+                            insights, mindfulness practices, and expert advice.
+                            Track your journey with tailored features, from
+                            monitoring baby kicks to managing daily health.
+                            Every step of the way, Mind &amp; Mom supports your
+                            well-being with care and compassion.
+                          </span>
+                        </div>
+                      </div>
+                      <a href="https://apps.apple.com/in/app/mind-mom/id1541449232" target="_blank">
+                      <button class="home-button3">
+                        <span class="home-text31 labelmd">View App</span>
+                      </button>
+                    </a>
+                    </div>
+                    <img
+                      src="public/external/image1202-93vc-700w.png"
+                      alt="Image1202"
+                      class="home-image3"
+                    />
+                  </div>
+                  <div class="home-project4">
+                    <div class="home-left4">
+                      <div class="home-text32">
+                        <div class="home-text33">
+                          <span class="home-text34 Headingh3">
+                            Grabky- Salon Website
+                          </span>
+                          <span class="home-text35 paragraphmd">2024-25</span>
+                          <span class="home-text36 paragraphlg">
+                            <span>
+                              Designed and developed a fully functional website
+                              for Grabky, enabling users to book salon
+                              appointments seamlessly. The project was built
+                              from scratch, incorporating user-friendly
+                              interfaces and features that simplify the booking
+                              process.
+                            </span>
+                            <br />
+                            <br />
+                            <span>
+                              The website is live, providing salon services
+                              across multiple cities, while the mobile app is
+                              under development and set to launch in the next
+                              2-3 months.
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <a href="http://grabky.com" target="_blank">
+                      <button class="home-button4">
+                        <span class="home-text41 labelmd">View Site</span>
+                      </button>
+                    </a>
+                    </div>
+                    <img
+                      src="public/external/image1205-kya-700w.png"
+                      alt="Image1205"
+                      class="home-image4"
+                    />
+                  </div>
+                  <div class="home-project5">
+                    <div class="home-left5">
+                      <div class="home-text42">
+                        <div class="home-text43">
+                          <span class="home-text44 Headingh3">
+                            Match Catch App
+                          </span>
+                          <span class="home-text45 paragraphmd">2024-25</span>
+                          <span class="home-text46 paragraphlg">
+                            Your personalized matchmaking companion. Match Catch
+                            App empowers users to find connections tailored to
+                            their preferences and specific needs. Whether you're
+                            looking for meaningful relationships or
+                            compatibility based on lifestyle choices, our app
+                            ensures accurate and effective matches.
+                          </span>
+                        </div>
+                      </div>
+                      <a href="https://apps.apple.com/us/app/matchcatch/id6479598484" target="_blank">
+                      <button class="home-button5">
+                        <span class="home-text47 labelmd">View App</span>
+                      </button>
+                    </a>
+                    </div>
+                    <img
+                      src="public/external/image1206-4m5-700w.png"
+                      alt="Image1206"
+                      class="home-image5"
+                    />
+                  </div>
+                  <div class="home-project6">
+                    <div class="home-left6">
+                      <div class="home-text48">
+                        <div class="home-text49">
+                          <span class="home-text50 Headingh3">
+                            Eatigo - Food Website
+                          </span>
+                          <span class="home-text51 paragraphmd">2024</span>
+                          <span class="home-text52 paragraphlg">
+                            Discover a smarter way to dine with Eatigo, a food
+                            ordering platform designed to bring the best dining
+                            experiences right to your fingertips. Explore
+                            curated menus, exclusive discounts, and personalized
+                            recommendations tailored to your preferences.
+                            Effortlessly book tables, browse cuisine options,
+                            and access reviews for an informed dining choice.
+                          </span>
+                        </div>
+                      </div>
+                      <a href="https://eatigo.com/en" target="_blank">
+                      <button class="home-button6">
+                        <span class="home-text53 labelmd">View Site</span>
+                      </button>
+                    </a>
+                    </div>
+                    <img
+                      src="public/external/image1206-e2df-700w.png"
+                      alt="Image1206"
+                      class="home-image6"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="home-aboutme">
+                <div class="home-about">
+                  <span class="home-text54 Headingh2">About Me</span>
+                  <div class="home-frame26">
+                    <span class="home-text55 subtitle">
+                      With over a years of experience in Ui/Ux design, I'm
+                      passionate about creating engaging and functional
+                      solutions that meet users' needs. My focus on user
+                      research and usability ensures that each design not only
+                      looks great but also delivers an exceptional experience
+                    </span>
+                    <div class="home-avatar">
+                      <img
+                        src="public/external/bg28-td9a-300w.png"
+                        alt="bg28"
+                        class="home-bg"
+                      />
+                      <img
+                        src="public/external/image29-u2ew-300w.png"
+                        alt="Image29"
+                        class="home-image7"
+                      />
+                    </div>
+                    <div class="home-hi">
+                      <img
+                        src="public/external/rectangle74243-uedl.svg"
+                        alt="Rectangle74243"
+                        class="home-rectangle7"
+                      />
+                      <span class="home-text56">Hi</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-skills">
+                  <span class="home-text57 Headingh3">My skills</span>
+                  <div class="home-row">
+                    <div class="home-list1">
+                      <div class="home-skill1">
+                        <img
+                          src="public/external/ellipse14114-lng6-200h.png"
+                          alt="Ellipse14114"
+                          class="home-ellipse11"
+                        />
+                        <span class="home-text58 paragraphlg">
+                          User Interface (UI) Design
+                        </span>
+                      </div>
+                      <div class="home-skill2">
+                        <img
+                          src="public/external/ellipse14116-6v3f-200h.png"
+                          alt="Ellipse14116"
+                          class="home-ellipse12"
+                        />
+                        <span class="home-text59 paragraphlg">
+                          User Experience (UX) Design
+                        </span>
+                      </div>
+                      <div class="home-skill3">
+                        <img
+                          src="public/external/ellipse14120-rgvo-200h.png"
+                          alt="Ellipse14120"
+                          class="home-ellipse13"
+                        />
+                        <span class="home-text60 paragraphlg">
+                          Interactive Prototyping
+                        </span>
+                      </div>
+                      <div class="home-skill4">
+                        <img
+                          src="public/external/ellipse14123-fzdg-200h.png"
+                          alt="Ellipse14123"
+                          class="home-ellipse14"
+                        />
+                        <span class="home-text61 paragraphlg">
+                          User Research
+                        </span>
+                      </div>
+                    </div>
+                    <div class="home-list2">
+                      <div class="home-skill5">
+                        <img
+                          src="public/external/ellipse14127-nc5c-200h.png"
+                          alt="Ellipse14127"
+                          class="home-ellipse15"
+                        />
+                        <span class="home-text62 paragraphlg">
+                          Interaction Design
+                        </span>
+                      </div>
+                      <div class="home-skill6">
+                        <img
+                          src="public/external/ellipse14130-7ta-200h.png"
+                          alt="Ellipse14130"
+                          class="home-ellipse16"
+                        />
+                        <span class="home-text63 paragraphlg">
+                          Responsive Design
+                        </span>
+                      </div>
+                      <div class="home-skill7">
+                        <img
+                          src="public/external/ellipse14133-kpl9-200h.png"
+                          alt="Ellipse14133"
+                          class="home-ellipse17"
+                        />
+                        <span class="home-text64 paragraphlg">Figma</span>
+                      </div>
+                      <div class="home-skill8">
+                        <img
+                          src="public/external/ellipse14136-3gue-200h.png"
+                          alt="Ellipse14136"
+                          class="home-ellipse18"
+                        />
+                        <span class="home-text65 paragraphlg">
+                          Team Collaboration
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-contact">
+                <div class="home-content3">
+                  <div class="home-header2">
+                    <span class="home-text66 Headingh2">Let's Talk!</span>
+                    <span class="home-text67 paragraphlg">
+                      Interested in working together or have a question? Feel
+                      free to reach out. I'm here to help you turn your ideas
+                      into amazing digital realities. Looking forward to hearing
+                      from you soon!
+                    </span>
+                  </div>
+                  <div class="home-social">
+                    <div class="home-socialicon1">
+                      <img
+                        src="public/external/email4225-usfb.svg"
+                        alt="Email4225"
+                        class="home-email"
+                      />
+                      <span class="home-text68 paragraphmd">
+                        priyanshu12403@gmail.com
+                      </span>
+                    </div>
+                    <div class="home-socialicon2">
+                      <img
+                        src="public/external/mditwitter4229-ieab8.svg"
+                        alt="mditwitter4229"
+                        class="home-mditwitter"
+                      />
+                    </div>
+                    <div class="home-socialicon3">
+                      <img
+                        src="public/external/riinstagramfill4232-r29b.svg"
+                        alt="riinstagramfill4232"
+                        class="home-riinstagramfill"
+                      />
+                    </div>
+                    <div class="home-socialicon4">
+                      <img
+                        src="public/external/rilinkedinfill4235-bf6j.svg"
+                        alt="rilinkedinfill4235"
+                        class="home-rilinkedinfill"
+                      />
+                    </div>
+                    <div class="home-socialicon5">
+                      <div class="home-fi2374593">
+                        <div class="home-group">
+                          <img
+                            src="public/external/vector1207-7r2k.svg"
+                            alt="Vector1207"
+                            class="home-vector1"
+                          />
+                          <img
+                            src="public/external/vector1207-u1ar.svg"
+                            alt="Vector1207"
+                            class="home-vector2"
+                          />
+                          <img
+                            src="public/external/vector1207-66j8.svg"
+                            alt="Vector1207"
+                            class="home-vector3"
+                          />
+                          <img
+                            src="public/external/vector1207-r82.svg"
+                            alt="Vector1207"
+                            class="home-vector4"
+                          />
+                          <img
+                            src="public/external/vector1207-q8ly.svg"
+                            alt="Vector1207"
+                            class="home-vector5"
+                          />
+                          <img
+                            src="public/external/vector1207-fyk8.svg"
+                            alt="Vector1207"
+                            class="home-vector6"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="public/external/ellipseright4237-qglw-300h.png"
+                  alt="ellipseright4237"
+                  class="home-ellipseright"
+                />
+                <img
+                  src="public/external/ellipseleft4238-6m4u-300h.png"
+                  alt="ellipseleft4238"
+                  class="home-ellipseleft"
+                />
+              </div>
+              <div class="home-footer">
+                <span class="home-text69 paragraphsm">
+                  © 2025 Priyanshu Gupta
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
